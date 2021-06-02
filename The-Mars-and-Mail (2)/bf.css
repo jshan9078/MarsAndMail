@@ -1,0 +1,79 @@
+body {
+  background-color: black;
+  background-image: url("http://static4.businessinsider.com/image/59ce0064351ccf20008b5eb2-1773/spacex-bfr-mars-colonization-plan-schematic.png");
+  background-size: contain;
+  height: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+*
+{
+ margin: 0;
+ padding: 0;
+}
+
+header {
+  height: 100vh;
+}
+
+header::after{
+  content: '';
+  display: table;
+}
+
+.container {
+  background:  rgba(58, 57, 57, 0.575);
+  height: 50px;
+  padding-top: 3px; 
+  padding-bottom: 15px;
+  padding-left: 20px;
+  margin-right: 0;
+}
+
+nav li{
+  font-family: 'raleway';
+  padding-top: 11.5px;
+  padding-bottom: 11.5px;
+  display: inline-block;
+  margin-right: 70px;
+  position: relative;
+  position: -webkit-sticky;
+}
+
+ul > li:first-of-type a {
+  font-family: 'Inria Serif', serif; 
+  color: rgb(255, 215, 141);
+  letter-spacing: 1px;
+  font-size: 30px;
+  font-weight: normal;
+
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav a:hover{
+  color: rgb(203, 242, 255);
+}
+
+nav a::before{
+  content: '';
+  display: block;
+  height: 2.5px;
+  width: 100%;
+  background-color:rgb(212, 232, 250);
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 500ms;
+}
+
+nav a:hover::before{
+  width:100%;
+}

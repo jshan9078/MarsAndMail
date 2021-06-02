@@ -1,0 +1,84 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'raleway';
+}
+
+body {
+  background-image: url("https://cutewallpaper.org/21/minimalist-space-background/minimalism-Space-Stars-Wallpapers-HD-Desktop-and-Mobile-.jpg");
+}
+
+.headers {
+  position: relative;
+  text-align: center;
+  font-family: 'raleway';
+  top: 55px;
+  color: coral;
+  font-size: 50px;
+  padding-top: 12px;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 0 20px;
+}
+.contact-form {
+  max-width: 2000px;
+  height: 1000px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.253);
+  padding: 250px;
+  border-radius: 5px;
+  display: flex;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.459);
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+
+.input-fields,
+.msg {
+  width: 48%;
+}
+
+.input-fields .input,
+.msg textarea{
+  margin: 10px 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #c5ecfd;
+  padding: 10px;
+  color: #c5ecfd;
+  width: 100%;
+}
+
+.msg textarea{
+  height: 212px;
+}
+
+::-webkit-input-placeholder {
+  color: #c5ecfd;
+}
+
+::-ms-input-placeholder {
+  color: #c5ecfd;
+}
+
+.btn {
+  background: coral;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}

@@ -1,0 +1,238 @@
+body {
+  background-image: url("https://cutewallpaper.org/21/minimalist-space-background/minimalism-Space-Stars-Wallpapers-HD-Desktop-and-Mobile-.jpg");
+  z-index: 0;
+}
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+header::after{
+  content: '';
+  display: table;
+}
+
+.container {
+  background:  rgba(58, 57, 57, 0.575);
+  height: 50px;
+  padding-top: 3px; 
+  padding-bottom: 15px;
+  padding-left: 20px;
+  margin-right: 0;
+  position: fixed;
+  z-index: 1;
+}
+
+nav li{
+  font-family: 'raleway';
+  padding-top: 11.5px;
+  padding-bottom: 11.5px;
+  display: inline-block;
+  margin-right: 70px;
+  position: relative;
+}
+
+ul > li:first-of-type a {
+  font-family: 'Inria Serif', serif; 
+  color: rgb(255, 215, 141);
+  letter-spacing: 1px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav a:hover{
+  color: rgb(203, 242, 255);
+}
+
+nav a::before{
+  content: '';
+  display: block;
+  height: 2.5px;
+  width: 100%;
+  background-color:rgb(212, 232, 250);
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 500ms;
+}
+
+nav a:hover::before{
+  width:100%;
+}
+
+.headers {
+  position: relative;
+  text-align: center;
+  font-family: 'raleway';
+  top: 55px;
+  color: skyblue;
+  font-size: 50px;
+  padding-top: 12px;
+}
+
+.head {
+  margin-right: Auto;
+  margin-left: Auto;
+  width: auto;
+  position: relative;
+  text-align: center;
+  font-family: 'raleway';
+  color: rgb(240, 188, 129);
+  font-size: 17px;
+  top: 70px;
+}
+
+.timeline {
+  margin: 15px;
+  padding-bottom: 15px;
+  padding: 15px;
+}
+
+.timeline li{
+  padding-top: 10px;
+}
+
+.timeline .time {
+  padding-top: 12px;
+}
+ 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'raleway';
+}
+
+.timeline{
+  position: relative;
+  margin: 50px auto;
+  padding: 40px 0;
+  width: 1000px;
+  box-sizing: border-box;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: rgb(246, 191, 101);
+}
+
+.timeline ul{
+  margin: 0;
+  padding: 0;
+}
+
+.timeline ul li {
+  list-style: none;
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.timeline ul li:nth-child(odd){
+  float: left;
+  text-align: right;
+  clear: both;
+}
+
+.timeline ul li:nth-child(even){
+  float: right;
+  text-align: left;
+  clear: both;
+}
+
+.content {
+  padding-bottom: 20px;
+}
+
+.timeline ul li:nth-child(odd):before{
+  content: '';
+  position: absolute;
+  top: 24px;
+  right: -6px;
+  width: 10px;
+  height: 10px;
+  background: rgb(102, 198, 228);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(233,33,99,0.2);
+}
+
+.timeline ul li:nth-child(even):before{
+  content: '';
+  position: absolute;
+  top: 24px;
+  left: -4px;
+  width: 10px;
+  height: 10px;
+  background: rgb(102, 198, 228);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(233,33,99,0.2);
+}
+
+.timeline ul li h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  color:coral;
+}
+
+.timeline ul li p {
+  margin: 10px 0 0;
+  padding: 0;
+  color: white;
+}
+
+.timeline ul li .time h4{
+  margin: 0;
+  padding: 0;
+}
+
+.timeline ul li:nth-child(odd) .time {
+  position: absolute;
+  top: 12px;
+  right: -165px;
+  margin: 0;
+  padding: 8px 16px;
+  background: rgb(102, 198, 228);
+  color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 0 0 3px rgb(7, 111, 143);
+}
+
+.timeline ul li:nth-child(even) .time {
+  position: absolute;
+  top: 12px;
+  left: -165px;
+  margin: 0;
+  padding: 8px 16px;
+  background: rgb(102, 198, 228);
+  color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 0 0 3px rgb(7, 111, 143);
+}
+
+.timeline {
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

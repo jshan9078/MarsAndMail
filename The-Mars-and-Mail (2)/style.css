@@ -1,0 +1,160 @@
+*
+{
+ margin: 0;
+ padding: 0;
+}
+
+header {
+  background: rgba(15, 52, 100, 0.712);
+  height: 100vh;
+}
+
+header::after{
+  content: '';
+  display: table;
+}
+
+.container {
+  background:  rgba(58, 57, 57, 0.575);
+  height: 50px;
+  padding-top: 3px; 
+  padding-bottom: 12px;
+  padding-left: 20px;
+  margin-right: 0;
+}
+
+.video-background{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-height: 100%;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+
+@media (min-aspect-ratio: 16/9){
+  .video-background {
+    width: 100px;
+    height: auto;
+  }
+}
+
+@media (min-aspect-ratio: 16/9){
+  .video-background {
+    width: auto;
+    height: 100px;
+  }
+}
+
+nav .video-background{
+  width: 100%;
+  margin: 0px auto;
+}
+
+nav li{
+  font-family: 'raleway';
+  padding-top: 11.5px;
+  padding-bottom: 11.5px;
+  display: inline-block;
+  margin-right: 70px;
+  position: relative;
+  position: -webkit-sticky;
+}
+
+ul > li:first-of-type a {
+  font-family: 'Inria Serif', serif; 
+  color: rgb(255, 215, 141);
+  letter-spacing: 1px;
+  font-size: 30px;
+  font-weight: normal;
+
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav a:hover{
+  color: rgb(203, 242, 255);
+}
+
+nav a::before{
+  content: '';
+  display: block;
+  height: 2.5px;
+  width: 100%;
+  background-color:rgb(212, 232, 250);
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 500ms;
+}
+
+nav a:hover::before{
+  width:100%;
+}
+
+.msg {
+  padding-top: 150px;
+  position: relative;
+  text-align: center;
+  font-family: 'raleway';
+  top: 200px;
+}
+.msg h1{
+  padding-top: 100px;
+  font-size: 90px;
+  color: rgb(240, 188, 129);
+  font-weight: bold;
+  text-align: center;
+}
+
+.msg h2{
+  color: rgb(102, 198, 228);
+  font-weight: bold;
+  font-size: 60px;
+  padding-bottom: 40px;
+}
+
+.btn {
+  font-size: 30px;
+  color: rgb(219, 174, 123);
+  margin: 5px;
+  padding: 4px 28px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 5px solid white;
+  border-radius: 25px;
+}
+
+.btn:hover  {
+  background: aliceblue;
+  transition: .4s;
+  border: 5px solid aliceblue;
+}
+
+.msg {
+  animation: fadeIn 6.5s;
+}
+
+@keyframes fadeIn{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
